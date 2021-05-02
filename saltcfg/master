@@ -1,0 +1,8 @@
+root_dir: .salt-root
+ssh_log_file: .salt-ssh.log
+file_roots:
+  base:
+    - _salt
+pillar_roots:
+  base:
+    - _pillar

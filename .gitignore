@@ -1,0 +1,9 @@
+# terraform
+_terraform/.terraform
+_terraform/.terraform.lock.hcl
+_terraform/terraform.tfstate
+_terraform/terraform.tfstate.backup
+# salt
+_pillar
+.salt-root
+.salt-ssh.log

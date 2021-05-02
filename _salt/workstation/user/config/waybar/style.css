@@ -1,0 +1,39 @@
+* {
+    color: #2e3440;
+    background: #d8dee9;
+    border: none;
+    border-radius: 0;
+    font-family: "Inconsolata Nerd Font";
+    font-size: 16px;
+} 
+
+#clock, #battery, #pulseaudio, #mode {
+    margin: 0 0.75em;
+}
+
+#workspaces button {
+    color: #fff;
+    padding: 0 7px;
+}
+#workspaces button.focused {
+    font-weight: bold;
+    border-top: 2px solid #2e3440;
+}
+#workspaces button.urgent {
+    font-weight: bold;
+    color: #d08770; 
+}
+
+#battery {
+    margin-top: 0.125em;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#mode {
+    padding: 0 8px;
+    color: #eceff4;
+    background: #4c566a;
+}

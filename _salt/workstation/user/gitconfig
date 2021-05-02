@@ -1,0 +1,9 @@
+[user]
+	name = Terry Kerr
+	email = terry@oefd.net
+
+[core]
+	editor = /usr/bin/nvim
+
+[init]
+	defaultBranch = trunk

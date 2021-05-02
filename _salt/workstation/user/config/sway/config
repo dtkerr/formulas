@@ -1,0 +1,96 @@
+### i/o setup
+output eDP-1 scale 2
+output DP-1 pos 3840 0 res 3840x2160 scale 1.5
+output DP-2 pos 3840 0 res 3840x2160 scale 1.5
+output "*" background /home/terry/.local/wallpaper fill
+
+exec ibus-daemon -drx --panel /usr/lib/ibus/ibus-wayland
+
+## key aliases
+set $mod  Mod4
+set $left  h
+set $down  j
+set $up    k
+set $right l
+
+## keybindings
+# system commands
+bindsym $mod+Shift+q	kill
+bindsym $mod+Shift+c	reload
+bindsym $mod+Shift+e	exit
+# move focus
+bindsym $mod+$left        focus left
+bindsym $mod+$right       focus right
+bindsym $mod+$up          focus up
+bindsym $mod+$down		    focus down
+# move widnows within workspaces
+bindsym $mod+Shift+$left	move left
+bindsym $mod+Shift+$right	move right
+bindsym $mod+Shift+$up		move up
+bindsym $mod+Shift+$down	move down
+# move widnows across workspaces
+bindsym $mod+Shift+1		  move container to workspace number 1
+bindsym $mod+Shift+2		  move container to workspace number 2
+bindsym $mod+Shift+3	  	move container to workspace number 3
+bindsym $mod+Shift+4  		move container to workspace number 4
+bindsym $mod+Shift+5		  move container to workspace number 5
+bindsym $mod+Shift+6		  move container to workspace number 6
+bindsym $mod+Shift+7		  move container to workspace number 7
+bindsym $mod+Shift+8		  move container to workspace number 8
+bindsym $mod+Shift+9		  move container to workspace number 9
+bindsym $mod+Shift+0		  move container to workspace number 0
+# programs
+bindsym $mod+Return       exec alacritty
+bindsym $mod+d            exec rofi -show drun
+bindsym $mod+Shift+s      exec /usr/bin/swaylock -i /home/terry/.local/wallpaper
+
+## workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 0
+
+## layout
+bindsym $mod+s           layout stacking
+bindsym $mod+w           layout tabbed
+bindsym $mod+e           layout toggle split
+bindsym $mod+f           fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space       focus mode_toggle
+bindsym $mod+a           focus parent
+bindsym $mod+ctrl+$left  splith
+bindsym $mod+ctrl+$down  splitv
+bindsym $mod+ctrl+$up    splitv
+bindsym $mod+ctrl+$right splith
+
+## resize mode
+bindsym $mod+r mode "resize"
+mode "resize" {
+  bindsym Return mode "default"
+  bindsym $left  resize shrink width  10 px or 10 ppt
+  bindsym $down  resize grow   height 10 px or 10 ppt
+  bindsym $up    resize shrink height 10 px or 10 ppt
+  bindsym $right resize grow   width  10 px or 10 ppt
+}
+
+## aesthetics
+font pango:IBM Plex 10
+default_border pixel 4
+gaps inner 8
+gaps outer 0
+#                       border       bg           text        indicator    child_border
+client.focused          #6f8fb4      #6f8fb4      #2d3241     #6f8fb4      #6f8fb4
+client.focused_inactive #2d3241      #dfe3ec      #b04b57     #2d3241      #2d3241
+client.unfocused        #2d3241      #dfe3ec      #2d3241     #2d3241      #2d3241
+client.urgent           #b04b57      #b04b57      #b04b57     #2d3241      #b04b57
+
+## status bar
+bar {
+    swaybar_command waybar
+}

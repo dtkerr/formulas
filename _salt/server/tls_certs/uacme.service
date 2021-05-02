@@ -1,0 +1,10 @@
+[Unit]
+Description=Run uacme for renewal
+
+[Service]
+Type=oneshot
+User=acme
+ExecStart=/var/lib/acme/renew.sh
+
+[Install]
+WantedBy=default.target

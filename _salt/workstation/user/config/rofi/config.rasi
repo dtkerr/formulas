@@ -1,0 +1,16 @@
+configuration {
+	font: "IBM Plex 14";
+	width: 35;
+	line-margin: 12;
+	lines: 6;
+	columns: 1;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     false;
+}
+
+@import "theme.rasi"

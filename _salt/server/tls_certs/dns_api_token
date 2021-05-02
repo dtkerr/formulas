@@ -1,0 +1,1 @@
+DNS_API_TOKEN={{ pillar.cloudflare.dns_api_token }}

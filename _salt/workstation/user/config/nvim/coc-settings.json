@@ -1,0 +1,20 @@
+{
+    "codeLens.enable": true,
+    "pyright.enable": true,
+    "python": {
+        "formatting.provider": "black",
+        "linting.enabled": true
+    },
+    "deno": {
+        "enable": true,
+        "lint": true
+    },
+    "tsserver": {
+        "enable": false
+    },
+    "rust-analyzer": {
+        "enable": true,
+        "server": { "path": "/usr/bin/rust-analyzer" }
+    },
+    "languageserver": {}
+}
