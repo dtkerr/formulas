@@ -15,3 +15,4 @@ alias pacman="sudo pacman"
 alias ssh="env TERM=xterm-256color ssh"
 
 fish_ssh_agent
+fish_vi_key_bindings

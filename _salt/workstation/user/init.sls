@@ -74,6 +74,7 @@ desktop:
       # utilities
       - alacritty
       - chromium
+      - broot
 
       # fonts
       - noto-fonts
