@@ -13,8 +13,8 @@ function fish_prompt_custom_venv
 end
 
 function fish_prompt_custom_ruby
-    if test -n "$RUBY_VERSION"
-        printf " %s%s" (set_color -o red) $RUBY_VERSION
+    if set -l ruby_ver (rbenv local 2>/dev/null)
+        printf " %s%s" (set_color -o red) $ruby_ver
     end
 end
 

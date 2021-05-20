@@ -11,5 +11,5 @@ insert_final_newline = true
 [Makefile]
 indent_style = tab
 
-[*.{rb,rkt,sls,yml,yaml,html,tf,hcl}]
+[*.{rb,rkt,sls,yml,yaml,html,tf,hcl,erb}]
 indent_size = 2

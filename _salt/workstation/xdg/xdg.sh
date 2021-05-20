@@ -24,7 +24,6 @@ export PSQL_HISTORY="${XDG_CACHE_HOME}/psql_history"
 export PYTHON_EGG_CACHE="${XDG_CACHE_HOME}/python-eggs"
 export RANDFILE="${XDG_CACHE_HOME}/rnd"
 export SQLITE_HISTORY="${XDG_CACHE_HOME}/sqlite_history"
-export GEM_SPEC_CACHE="${XDG_CACHE_HOME}/gem"
 
 # data
 export BUNDLE_USER_PLUGIN="${XDG_DATA_HOME}/bundle"
@@ -41,4 +40,4 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export STACK_ROOT="${XDG_DATA_HOME}/stack"
 export WORKON_HOME="${XDG_DATA_HOME}/venvs"
 export SSB_HOME="${XDG_DATA_HOME}/zoom"
-export GEM_HOME="${XDG_DATA_HOME}/gem"
+export RBENV_ROOT="${XDG_DATA_HOME}/rbenv"
